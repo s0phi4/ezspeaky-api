@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20170325203843) do
   end
 
   create_table "therapies", force: :cascade do |t|
-    t.string   "name"
+    t.string   "name",       null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -40,11 +40,14 @@ ActiveRecord::Schema.define(version: 20170325203843) do
   end
 
   create_table "videos", force: :cascade do |t|
-    t.string   "name"
-    t.string   "url"
+    t.string   "name",       null: false
+    t.string   "url",        null: false
+    t.integer  "therapy_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["therapy_id"], name: "index_videos_on_therapy_id", using: :btree
   end
 
   add_foreign_key "examples", "users"
+  add_foreign_key "videos", "therapies"
 end

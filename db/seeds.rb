@@ -10,3 +10,9 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Therapy.create([{ name: 'Vocalization' }])
+
+Video.create([{
+               therapy: Therapy.first,
+               name: 'vowels',
+               url: 'https://www.youtube.com/watch?v=BGa3AqeqRy0&list=PLjxkFbiVAu_OLWF7tv-eY9ehsXLyX2D4y'
+             }])
