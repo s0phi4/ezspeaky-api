@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 Rails.application.routes.draw do
+  resources :videos, only: [:index, :show]
   resources :therapies, only: [:index, :show]
   resources :examples, except: [:new, :edit]
   post '/sign-up' => 'users#signup'
