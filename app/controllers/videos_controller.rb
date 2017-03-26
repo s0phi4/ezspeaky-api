@@ -19,7 +19,7 @@ class VideosController < ProtectedController
     @video = Video.new(video_params)
 
     if @video.save
-      render json: @video, status: :created, location: @video
+      render json: @video, status: :created
     else
       render json: @video.errors, status: :unprocessable_entity
     end

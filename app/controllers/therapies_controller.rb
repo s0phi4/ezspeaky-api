@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class TherapiesController < ProtectedController
   before_action :set_therapy, only: [:index, :show]
 
