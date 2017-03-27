@@ -9,7 +9,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Therapy.create([{ name: 'Vocalization' }, { name: 'Articulation' },
+Therapy.create([{ name: 'Speech Emission' }, { name: 'Articulation' },
                 { name: ' Air Flow' }])
 
 Video.create([{

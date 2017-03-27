@@ -2,7 +2,7 @@
 class CreateTherapies < ActiveRecord::Migration[5.0]
   def change
     create_table :therapies do |t|
-      t.string :name, null: false
+      t.string :name
 
       t.timestamps
     end

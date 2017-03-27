@@ -5,7 +5,6 @@ class TherapiesController < ProtectedController
   # GET /therapies
   def index
     @therapies = Therapy.all
-
     render json: @therapies
   end
 

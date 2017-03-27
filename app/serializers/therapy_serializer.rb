@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 class TherapySerializer < ActiveModel::Serializer
-  attributes :id, :name, :videos
+  attributes :id, :name
 
-  def videos
-    object.videos.pluck(id)
-  end
+  # def videos
+  #   object.videos.pluck(id)
+  # end
 end

@@ -1,10 +1,10 @@
 #!/bin/bash
 
 API="${API_ORIGIN:-http://localhost:4741}"
-URL_PATH="/therapies/${ID}"
+URL_PATH="/comments/${ID}"
  curl "${API}${URL_PATH}" \
  --include \
- --request GET \
+ --request DELETE \
  --header "Authorization: Token token=$TOKEN"
 
  echo
