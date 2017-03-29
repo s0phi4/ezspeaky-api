@@ -11,7 +11,7 @@
 
 Therapy.create([{ name: 'Speech Emission' },
                 { name: 'Articulation' },
-                { name: ' Air Flow' }])
+                { name: 'Sound Recognition' }])
 
 Video.create([{
                therapy: Therapy.first,
