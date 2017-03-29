@@ -1,6 +1,6 @@
 # frozen_string_literal: true
-class VideosController < ProtectedController
-  before_action :set_video, only: [:index, :show]
+class VideosController < OpenReadController
+  before_action :set_video, only: []
 
   # GET /videos
   def index
