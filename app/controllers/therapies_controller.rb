@@ -45,7 +45,7 @@ class TherapiesController < ProtectedController
 
   # Only allow a trusted parameter "white list" through.
   def therapy_params
-    params.require(:therapy).permit(:name)
+    params.require(:therapy).permit(:title, :content)
   end
 
   private :set_therapy, :therapy_params

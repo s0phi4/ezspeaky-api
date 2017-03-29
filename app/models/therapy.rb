@@ -3,5 +3,5 @@ class Therapy < ApplicationRecord
   has_many :users, through: :comments
   has_many :comments
   has_many :videos
-  validates :name, presence: true
+  validates :title, :content, presence: true
 end
