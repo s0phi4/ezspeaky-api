@@ -18,13 +18,15 @@ Therapy.create([{
                 {
                   title: 'Articulation',
                   content: 'Compensatory productions are easiest to correct AFTER surgical correction. Once surgery is done to
-                  correct the abnormal structure, speech therapy is necessary to correct the abnormal function.'
+                  correct the abnormal structure, speech therapy is necessary to correct the abnormal function. Simulate articulation of words,
+                  so the child can recognize proper speech patterns.  '
                 },
                 {
                   title: 'Sound Recognition',
                   content: 'Typically, many children with repaired clefts that involve the gum ridge (alveolar ridge) will distort
                   the sounds "s  z  ch  j (as in “judge”) sh zh."  These sounds are called "sibilants."  To produce these sounds, air must flow over
-                  the tongue and strike the front teeth.This causes the air to become turbulent (a hissing-like sound).'
+                  the tongue and strike the front teeth.This causes the air to become turbulent (a hissing-like sound). Use the below therapy
+                  exercises to pratice flow of speech with the above sounds. '
                 }])
 
 Video.create([{
