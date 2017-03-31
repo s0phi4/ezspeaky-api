@@ -3,6 +3,8 @@
 ## Technologies Used
 
 - Rails
+- Scaffold the tables needed with attributes required.
+- Use of protected controller for user to see therapies and create comments and open read controller for videos.
 
 ## Links to EzSpeaky API essentials
 
@@ -18,10 +20,10 @@
 - comments
 - videos
 
+## Approach
 
-## To be added as app progresses
+- Identify tables needed and relationships, as well as attributes for each table. I struggled setting up the relationship because I provide most of the information in the app for therapies and the videos that belong to each therapy. In order to fulfill requirements, I found a way for users to CRUD on the app, through comments; this is a join table between users and therapies. Protected controllers are used for comments and therapies and an open controller was used for videos.
 
-- Installation instructions for any dependencies
-- Explanations of the technologies used
-- A couple paragraphs about the general approach you took
-- Descriptions of any unsolved problems or major hurdles you had to overcome
+## Major hurdle
+
+- Not major hurdles but once I update the app, I would like to add more tsbles that allow me to displayt interactive therapies for kids and parents. 
